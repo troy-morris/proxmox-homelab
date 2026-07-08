@@ -206,7 +206,7 @@ A dedicated Debian 12 LXC (CT 104) running **Prometheus** and **Grafana** provid
 - Grafana connects to Prometheus at `http://10.10.10.3:9090` and is accessible over Tailscale
 - Node Exporter Full dashboard (ID 1860) provides per-node drilldown across all metrics
 
-[![Grafana dashboard](images/grafana-dashboard.png)](images/grafana-dashboard.png)
+[![Grafana dashboard](images/lab-28.png)](images/lab-28.png)
 *Node Exporter Full dashboard — live metrics for the Proxmox host showing CPU, RAM, disk usage, and network traffic across all bridge interfaces.*
 ## Self-Hosted Git — Gitea (LXC)
 
