@@ -208,6 +208,17 @@ A dedicated Debian 12 LXC (CT 104) running **Prometheus** and **Grafana** provid
 
 [![Grafana dashboard](images/grafana-dashboard.png)](images/grafana-dashboard.png)
 *Node Exporter Full dashboard — live metrics for the Proxmox host showing CPU, RAM, disk usage, and network traffic across all bridge interfaces.*
+## Self-Hosted Git — Gitea (LXC)
+
+**Gitea** runs as a lightweight Debian 12 LXC (CT 105) at `10.10.10.4`, providing a private self-hosted Git service accessible over Tailscale. All homelab repositories push simultaneously to both GitHub (public portfolio) and Gitea (private backup) via dual push remotes configured in git — a single `git push origin main` updates both.
+
+[![Gitea web interface](https://github.com/troy-morris/proxmox-homelab/raw/main/images/lab-29.png)](/troy-morris/proxmox-homelab/blob/main/images/lab-29.png)
+*Gitea dashboard — self-hosted Git service running on the lab network, accessible remotely over the Tailscale mesh.*
+
+[![proxmox-homelab repo on Gitea](https://github.com/troy-morris/proxmox-homelab/raw/main/images/lab-30.png)](/troy-morris/proxmox-homelab/blob/main/images/lab-30.png)
+*The proxmox-homelab repository mirrored to self-hosted Gitea alongside GitHub, pushed via dual remote configuration.*
+
+---
 
 ## Skills Demonstrated
 
