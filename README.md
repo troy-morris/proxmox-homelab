@@ -230,6 +230,7 @@ A dedicated Debian 12 LXC (CT 104) running **Prometheus** and **Grafana** provid
 - **Linux administration:** Debian/Ubuntu, systemd services, Docker, cloud-init
 - **Remote access & security:** Tailscale mesh networking, keeping services off the public internet
 - **Observability:** Prometheus metrics collection, Node Exporter deployment, Grafana dashboards for real-time visibility across heterogeneous lab nodes
+- **Self-hosted services:** Gitea Git server, dual-remote push workflow (GitHub + self-hosted simultaneously)
 
 ---
 
