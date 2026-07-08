@@ -198,6 +198,17 @@ All lab nodes are connected to a **Tailscale** mesh network, providing encrypted
 
 ---
 
+## Monitoring — Grafana + Prometheus (LXC)
+
+A dedicated Debian 12 LXC (CT 104) running **Prometheus** and **Grafana** provides real-time visibility across all lab nodes. **Node Exporter** is deployed on every VM and container, scraping system metrics every 15 seconds into Prometheus, with Grafana dashboards surfacing CPU, memory, disk, and network data in one place.
+
+- Prometheus scrapes five targets: monitoring CT, Pi-hole, Ubuntu Server VM, LLM VM, and the Proxmox host
+- Grafana connects to Prometheus at `http://10.10.10.3:9090` and is accessible over Tailscale
+- Node Exporter Full dashboard (ID 1860) provides per-node drilldown across all metrics
+
+[![Grafana dashboard](images/grafana-dashboard.png)](images/grafana-dashboard.png)
+*Node Exporter Full dashboard — live metrics for the Proxmox host showing CPU, RAM, disk usage, and network traffic across all bridge interfaces.*
+
 ## Skills Demonstrated
 
 - **Virtualization:** Proxmox VE, KVM VMs and LXC containers, storage pools (LVM-Thin), UEFI/OVMF guests, backups
