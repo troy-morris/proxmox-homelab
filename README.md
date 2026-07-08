@@ -218,6 +218,7 @@ A dedicated Debian 12 LXC (CT 104) running **Prometheus** and **Grafana** provid
 - **Advanced virtualization:** VFIO / IOMMU GPU passthrough (device binding, host blacklisting, secure-boot handling)
 - **Linux administration:** Debian/Ubuntu, systemd services, Docker, cloud-init
 - **Remote access & security:** Tailscale mesh networking, keeping services off the public internet
+- **Observability:** Prometheus metrics collection, Node Exporter deployment, Grafana dashboards for real-time visibility across heterogeneous lab nodes
 
 ---
 
